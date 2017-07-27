@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class RequestsController {
-        @RequestMapping("/greeting")
+        @RequestMapping({"/greeting", "/"})
     public String greeting() {
         //model.addAttribute("name", name);
         return "greeting";
